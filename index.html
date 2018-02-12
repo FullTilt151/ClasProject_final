@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mike Cook Class Project Site.</title>
+    <title>Mike Cook Code Louisville Projecdt</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
-<header>
-    <img src="img/download.jpg">
-    <h1>Bluegrass Dual Sport Adventure Tours</h1>
-    <p>Kentucky's best site to discover local trails.</p>  
-</header>
 
-<nav class="mikenav">
-    <a href="#">Our Mission</a>
-    <a href="#">Places To Ride</a>
-    <a href="#">Trail Etiquette</a>
-    <a href="#">Maps</a>
-</nav>
+<!--main page code below -->
 <body>
-    <div id="main-container">
-        Hello World.
-    </div>
-    <!--
-    <form action="#" class="emailform">
-        Enter a valid email address for our news letter: <input type="email" name="email"><br>
-    <input type="submit" value="Click Me">
-    </form> -->
+        <div id="header">
+            <h1>Kentucky Dual Sport Trail Adventures</h1>
+        </div>
+        <!--links to work. could've linked them to the same page but there's always a connetion these days. Also added code to open link in a new tab. -->
+        <div id="nav">
+            <a href="https://www.urbandictionary.com/define.php?term=Safety%20Third" target="_blank">Our Mission</a>
+            <a href="https://www.google.com/earth/" target="_blank">Maps</a>
+            <a href="https://www.dirtrider.com/features/protips/group-trail-riding-etiquette" target="_blank">Trail Etiquette</a>
+            <a href="#">Dual sport bikes</a>
+        </div>
+        <!--side bar information. Removed links since some test links are in the nav bar. -->
+        <div id="side-bar">
+            <H2>Testimonials</H2>
+            <hr>
+                <h4>Dewy Cox</h4>
+                <p>Isn't that fantastic? You can just push a little tree out of your brush like that. If you do too much it's going to lose its effectiveness. Work that paint. In your imagination you can go anywhere you want.</p>
+                <br>
+                <h4>Robert California</h4>
+                <p>I get carried away with this brush cleaning. I want everbody to be happy. That's what it's all about. Maybe there's a happy little bush that lives right there. Nice little fluffy clouds laying around in the sky being lazy.</p>
+        </div>
+        <!--Need to figure out how to wrap the text better around the image. -->
+        <div id="content">
+            <h3>::This Week's Updates from Bill Murray::</h3>
+            <img src="https://www.fillmurray.com/140/100">
+           <i><b>What is Lorem Ipsum?</b></i>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            <p>
+            <b><i>Why do we use it?</i></b>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+            <p>
+            <b><i>Where can I get some?</i></b>
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+            </p>
+            
+        </div>
+        <!-- footer info -->    
+        <div id="footer">
+                <button onclick="myClickyThinger()">Click here to view contact info</button>
+           <!-- Website Design: Mike Cook Designs<br>
+            Copyright: Feb 8th 2018<br>
+            Kentucky, USA -->
+        </div>
+
+<!-- JavaScript function that'll display contact info -->
+        <script>
+            function myClickyThinger(){
+               confirm("Website Design: Mike Cook\nCopyright: Mike Cook Designs Feb 8th 2018\nKentucky, USA")
+            }
+        </script>
+
+
+
+
+    
+    
 </body>
 </html>
