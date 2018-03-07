@@ -1,68 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Mike Cook Code Louisville Projecdt</title>
+    <meta charset="utf-8">
+    <!-- following line is 'mobile first' which enables the page to scale with the size of the screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Let's bootstrap this thing -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Mike Cook Code Louisville Project</title>
 </head>
 
-<!--main page code below -->
-<body>
-        <div id="header">
-            <h1>Kentucky Dual Sport Trail Adventures</h1>
+<body id="main-page">
+    <!--Build the Nav bar and Owner link -->
+    <nav class="navbar navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="#" target="_blank">Navigation</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Home" target="_blank">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">Training</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">Bikes</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Comp" target="_blank" data-toggle="modal">CyberDyne Systems Inc.</a>
+                </li>
+            </ul>
         </div>
-        <!--links to work. could've linked them to the same page but there's always a connetion these days. Also added code to open link in a new tab. -->
-        <div id="nav">
-            <a href="https://www.urbandictionary.com/define.php?term=Safety%20Third" target="_blank">Our Mission</a>
-            <a href="https://www.google.com/earth/" target="_blank">Maps</a>
-            <a href="https://www.dirtrider.com/features/protips/group-trail-riding-etiquette" target="_blank">Trail Etiquette</a>
-            <a href="#">Dual sport bikes</a>
+    </nav>
+
+    <!--Build the Jumbotron. Text is centered from my custom css-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Kentucky Dual Sport Outfitters</h1>
+            <!-- <p class="lead">Kentuckian's Best Dual Sport Adventure.</p> -->
         </div>
-        <!--side bar information. Removed links since some test links are in the nav bar. -->
-        <div id="side-bar">
-            <H2>Testimonials</H2>
-            <hr>
-                <h4>Dewy Cox</h4>
-                <p>Isn't that fantastic? You can just push a little tree out of your brush like that. If you do too much it's going to lose its effectiveness. Work that paint. In your imagination you can go anywhere you want.</p>
-                <br>
-                <h4>Robert California</h4>
-                <p>I get carried away with this brush cleaning. I want everbody to be happy. That's what it's all about. Maybe there's a happy little bush that lives right there. Nice little fluffy clouds laying around in the sky being lazy.</p>
-        </div>
-        <!--Need to figure out how to wrap the text better around the image. -->
-        <div id="content">
-            <h3>::This Week's Updates from Bill Murray::</h3>
-            <img src="https://www.fillmurray.com/140/100">
-           <i><b>What is Lorem Ipsum?</b></i>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            <p>
-            <b><i>Why do we use it?</i></b>
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </p>
-            <p>
-            <b><i>Where can I get some?</i></b>
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-            </p>
+    </div>
+
+    <!--Use flexbox container to create 3 elements -->
+<div id="flex-container">
+    <div id="l-side-bar">
+        <H2>Guided Tours</H2>
+        
+        <p>We offer various guided/non-guided tours.</p>
+           <ul><b>Some Examples:</b>
+               <li>Highwater trail. (Non-guided)</li>
+               <li>KAT. (Guided)</li>
+               <li>Jefferson Memorial (Non-guided)</li>
+           </ul>
+        
             
+    </div>
+
+    <div id="center">
+        <h2>Our Mission</h2>
+        
+        <p>We offer various guided or non-guided tours around the greater
+            tri-state area. We alo provide dual sport bikes and optional riding classes.
+        </p>
+            <img src="img/download.jpg">
+            <ol>Listy list:
+                <li>Stuff</li>
+                <li>Stuff</li>
+                <li>Stuff</li>
+                <li>Stuff</li>
+            </ol>
+    </div>
+
+    <div id="r-side-bar">
+        <H2>Testimonials</H2>
+
+        <P>"The best around!" -Mike C.</P>
+        <p>"The greatest thing since sliced bread" -Some dude.</p>
+        <p>"The service is great and the staff are super friendly!" -Robocop</p>
+    </div>
+
+</div> <!--end main flexbox container -->
+
+  
+<footer class="footer fixed-bottom bg-dark">
+        <div class="container">
+          <span class="text-muted">
+            <button onclick="myClickyThinger()">Click here to view contact info</button>
+
+          </span>
         </div>
-        <!-- footer info -->    
-        <div id="footer">
-                <button onclick="myClickyThinger()">Click here to view contact info</button>
-           <!-- Website Design: Mike Cook Designs<br>
-            Copyright: Feb 8th 2018<br>
-            Kentucky, USA -->
-        </div>
-
-<!-- JavaScript function that'll display contact info -->
-        <script>
-            function myClickyThinger(){
-               confirm("Website Design: Mike Cook\nCopyright: Mike Cook Designs Feb 8th 2018\nKentucky, USA")
-            }
-        </script>
-
-
-
-
+      </footer>
     
-    
+    <!-- footer info 
+    <div id="footer">
+        <button onclick="myClickyThinger()">Click here to view contact info</button>
+    </div> -->
+
+
+    <!-- JavaScript function that'll display contact info -->
+    <script>
+        function myClickyThinger() {
+            confirm("Website Design: Mike Cook\nCopyright: Mike Cook Designs Feb 8th 2018\nKentucky, USA")
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>
