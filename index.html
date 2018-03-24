@@ -37,80 +37,85 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" target="_blank">Bikes</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:mike@mike-cook.com">Contact Us</a>
+                </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#Comp" target="_blank" data-toggle="modal">CyberDyne Systems Inc.</a>
+                    <a class="nav-link" href="https://mike-cook.com" target="_blank">Mike-Cook Designs</a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> <!--End of nav bar, owner section -->
 
     <!--Build the Jumbotron. Text is centered from my custom css-->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Kentucky Dual Sport Outfitters</h1>
-            <!-- <p class="lead">Kentuckian's Best Dual Sport Adventure.</p> -->
+            <p class="lead">Kentuckiana's Best Dual Sport Adventure.</p>
         </div>
-    </div>
+    </div> <!--End of Jumbotron section -->
 
     <!--Use flexbox container to create 3 elements -->
-<div id="flex-container">
-    <div id="l-side-bar">
-        <H2>Guided Tours</H2>
-        
-        <p>We offer various guided/non-guided tours.</p>
-           <ul><b>Some Examples:</b>
+<div class="container">
+    <div class="row">
+        <div class="col-md centerColumns"> 
+            <H2>Guided Tours</H2>
+                <p>We offer various guided/non-guided tours.</p>
+                <ul><b>Some Examples:</b>
                <li>Highwater trail. (Non-guided)</li>
                <li>KAT. (Guided)</li>
                <li>Jefferson Memorial (Non-guided)</li>
            </ul>
-        
-            
-    </div>
-
-    <div id="center">
-        <h2>Our Mission</h2>
-        
-        <p>We offer various guided or non-guided tours around the greater
-            tri-state area. We alo provide dual sport bikes and optional riding classes.
-        </p>
-            <img src="img/download.jpg">
-            <ol>Listy list:
-                <li>Stuff</li>
-                <li>Stuff</li>
-                <li>Stuff</li>
-                <li>Stuff</li>
-            </ol>
-    </div>
-
-    <div id="r-side-bar">
-        <H2>Testimonials</H2>
-
-        <P>"The best around!" -Mike C.</P>
-        <p>"The greatest thing since sliced bread" -Some dude.</p>
-        <p>"The service is great and the staff are super friendly!" -Robocop</p>
-    </div>
-
-</div> <!--end main flexbox container -->
-
-  
-<footer class="footer fixed-bottom bg-dark">
-        <div class="container">
-          <span class="text-muted">
-            <button onclick="myClickyThinger()">Click here to view contact info</button>
-
-          </span>
         </div>
-      </footer>
-    
-    <!-- footer info 
-    <div id="footer">
+        <div class="col-md centerColumns">
+            <h2>Our Mission</h2>    
+           <!-- <img src="img\us.jpg"> -->
+            <p>We offer various guided or non-guided tours around the greater
+            tri-state area. We alo provide dual sport bikes and optional riding classes.
+            Our mission is to have fun, teach and learn all aspects of adventure riding and be
+            stewards of the land we use.
+            </p>
+        </div>    
+        <div class="col-md centerColumns">
+            <H2>Testimonials</H2>
+            <P>"The best around!" -Mike C.
+            <br>"We had a lot of fun. The greatest thing since sliced bread" -Some dude.
+            <br>"The service is great and the staff are super friendly!" -Robocop
+        </div>
+    </div>
+</div> <!-- end top 3 containers -->
+<br> <!-- I think this sucks, ask about this in class -->
+
+<!-- About Us and map -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <H3>About Us</H3>
+            <img src="img/us.jpg">
+        </div>
+        <div class="col-md-7">
+            <p>Lorem ipsum dolor amet next level tofu direct trade vinyl fanny pack 90's man bun enamel pin. Kogi swag williamsburg tote bag kitsch banh mi snackwave pabst master cleanse, artisan mlkshk celiac. Selfies lo-fi artisan aesthetic sriracha hammock twee wolf single-origin coffee. Gastropub authentic lyft, activated charcoal portland tilde synth art party food truck typewriter. Flexitarian affogato hexagon coloring book pickled, unicorn pug you probably haven't heard of them brunch. Listicle stumptown copper mug, tousled flexitarian tilde beard post-ironic meditation. Pug cray 8-bit, austin photo booth biodiesel subway tile hell of sartorial quinoa next level.</p>
+        </div>
+        <div class="col-md-5">
+            <h4>Check the map below for riding areas</h4>
+            <p>Pem ipsum dolor amet next level tofu direct trade vinyl fanny pack 90's man bun enamel pin. Kogi swag williamsburg tot</p>
+            <div id="map"></div>               
+        </div>
+    </div>
+</div>
+</body>
+<!--footer area -->
+<footer class="footer fixed-bottom bg-dark">
+    <div class="container">
+        <span class="text-muted">
         <button onclick="myClickyThinger()">Click here to view contact info</button>
-    </div> -->
-
-
-    <!-- JavaScript function that'll display contact info -->
+        </span>
+    </div>
+</footer>
+    
+<!-- JavaScript function that'll display contact info -->
     <script>
         function myClickyThinger() {
             confirm("Website Design: Mike Cook\nCopyright: Mike Cook Designs Feb 8th 2018\nKentucky, USA")
@@ -122,6 +127,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
+        crossorigin="anonymous"></script>  
+
+<!-- Google Map stuff -->
+<script>
+        function initMap() {
+          var uluru = {lat: 38.215688, lng: -85.734664};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVKTO5JGPopPdQVC8nB0bOvhvg1HM-rrg&callback=initMap">
+      </script>  
 </html>
