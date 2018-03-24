@@ -5,9 +5,6 @@
 This is my first project for Code Louisville. It's a simple, static HTML webpage using CSS and JavaScript.
 
 ```
-
-
-
 ## Custom CSS IDs
 ```
 The IDs I created are: #nav, #content, #side-bar, #header, #footer.
@@ -19,14 +16,11 @@ The IDs I created are: #nav, #content, #side-bar, #header, #footer.
 5. ID #footer: sets footer at bottom, sets font, font size. Sets border, padding, line height, bg color.
 
 ```
-
-
-
 ## Custom JavaScript Functions
 ```
 The javascript functions I created are:
 
 1. function name myClickyThinger()
-It popups up an box that displays some info about me, the copywrite of the page and a fake company name.
+It popups up an box that displays some info about me, the copywrite of the page and a fake company name. I will add more later.
 
 ```
